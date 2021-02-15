@@ -106,6 +106,9 @@ export default function PageOne() {
       if (findItem) {
         setCurDepartment(findItem);
         setContentLoading(true);
+        setTotalCount(0);
+        setSuccessCount(0);
+        setFailCount(0);
         setAsinsObj({});
         createAxios()
           .get(findItem.searchUrl)
@@ -155,6 +158,7 @@ export default function PageOne() {
         let fn = () => {
           return new Promise<void>((resolve) => {
             let asinUrl = COUNTRY_LIST[countryIndex].url + '/dp/' + asinKey;
+            if (countryIndex === 0) asinUrl += '?language=en_US';
             createAxios()
               .get(asinUrl)
               .then(({ data: asinData }) => {
