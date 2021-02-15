@@ -1,0 +1,76 @@
+.country {
+  height: 42px;
+  line-height: 42px;
+  padding: 0px 12px;
+}
+.content {
+  padding: 0px 12px;
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.content-left {
+  height: 100%;
+  position: relative;
+  padding-right: 6px;
+  min-height: calc(100vh - 78px);
+  /* border-right: 1px solid #eee; */
+  /* width: 300px; */
+}
+.content-left::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: #eee;
+}
+.content-right {
+  flex: 1;
+}
+.tool-box {
+  /* padding: 0 12px; */
+  display: flex;
+  align-items: center;
+}
+.tool-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-right: 12px;
+}
+.item-label {
+  white-space: nowrap;
+  margin-right: 12px;
+  /* width: 62px; */
+}
+.button-box {
+  /* text-align: center; */
+  margin-top: 6px;
+}
+.footerItemHeight {
+  height: 36px;
+  line-height: 36px;
+}
+.footer {
+  /* height: 36px; */
+  cursor: pointer;
+  opacity: .5;
+  /* display: flex; */
+  /* align-items: center; */
+  padding: 0 24px;
+  position: fixed;
+  background-color: #1890ff;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-icon {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  color: #fff;
+  font-size: 12px;
+}

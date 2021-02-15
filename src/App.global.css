@@ -3,3 +3,4 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 @import '~antd/dist/antd.css';
+@import './PageOne.css';

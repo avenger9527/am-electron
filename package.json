@@ -248,19 +248,22 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "dependencies": {
-    "antd": "^4.12.2",
+    "@ant-design/icons": "^4.5.0",
+    "antd": "^4.12.3",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
     "electron-debug": "^3.1.0",
     "electron-log": "^4.2.4",
     "electron-updater": "^4.3.4",
     "history": "^5.0.0",
+    "node-xlsx": "^0.16.1",
+    "random-useragent": "^0.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "^0.13.5",
-    "source-map-support": "^0.5.19"
-  },
-  "config": {
-    "electron_morror": "https://cdn.npm.taobao.org/dist/electron/"
+    "source-map-support": "^0.5.19",
+    "tunnel": "0.0.6"
   },
   "devEngines": {
     "node": ">=10.x",
@@ -293,10 +296,5 @@
     "baseBranches": [
       "next"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
